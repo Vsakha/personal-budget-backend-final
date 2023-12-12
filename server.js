@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
-var url = 'mongodb+srv://vsakha:vsakha@cluster0.mr4oq3e.mongodb.net//budgetdata?retryWrites=true&w=majority';
+var url = 'mongodb+srv://vsakha:vsakha@cluster0.mr4oq3e.mongodb.net/budgetdata?retryWrites=true&w=majority';
 
 mongoose.connect(url,{ useNewUrlParser: true, useUnifiedTopology: true,useCreateIndex: true })
     .then(() => console.log('Now connected to MongoDB!'))
